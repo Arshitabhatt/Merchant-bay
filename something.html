@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .share-list {
+            display:none;
+        }
+        </style>
+        </head>
+        <body>
+
+        <div onclick="shareListHideShow('t1')">temp1</div>
+        <div onclick="shareListHideShow('t2')">temp2</div>
+        <div onclick="shareListHideShow('t3')">temp3</div>
+        <div onclick="shareListHideShow('t4')">temp4</div>
+
+            <div class="share-list" id="t1">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./Graphics/dashboard-1.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>Style-wise Panel</p>
+                        <p>Have all communication and files of a style organized in a single window to be able to follow up instantly in an organized way</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="share-list" id="t2">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./Graphics/dashboard-2.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>Style-wise Panel</p>
+                        <p>Have all communication and files of a style organized in a single window to be able to follow up instantly in an organized way</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="share-list" id="t3">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./Graphics/dashboard-3.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>Style-wise Panel</p>
+                        <p>Have all communication and files of a style organized in a single window to be able to follow up instantly in an organized way</p>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="share-list" id="t4">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./Graphics/dashboard-1.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>Style-wise Panel</p>
+                        <p>Have all communication and files of a style organized in a single window to be able to follow up instantly in an organized way</p>
+                    </div>
+                </div>
+            </div>
+
+        <div id="out"></div>
+
+        <script>
+        //window.onload = myfunc();
+        function shareListHideShow(actionId){
+            var divs = document.getElementsByClassName("share-list");
+            for(var i=0;i<divs.length;i++) {
+                if(divs[i].id == actionId){
+                    if(divs[i].style.display === "block"){
+                        divs[i].style.display = "none";
+                    }else{
+                        divs[i].style.display = "block";
+                    }
+                }
+                else
+                    divs[i].style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
