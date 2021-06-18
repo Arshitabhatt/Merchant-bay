@@ -6,6 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
+    font-size: 15px;
 }
 
 .white-text{
@@ -24,10 +25,9 @@ color: #BEFFC6;
 .btn-price{
     background-color: #217156;
 	border: none;
-	padding: 0;
 	cursor: pointer;
 	outline: inherit;
-    padding: 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 5px;
     font-size: 12px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
@@ -43,6 +43,17 @@ color: #BEFFC6;
 .green-bg{
     background: rgb(33,113,86);
 background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86%);
+}
+
+.title-1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.small{
+    font-size: 12px;
+}
+.display-6{
+    font-size: 2.2rem;
 }
 /***************************************************************SECTION 1*********************************************************/
 #section-1 {
@@ -122,7 +133,7 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     border: 1px solid black;
     z-index: 1;
     position: relative;
-    margin-left: 22.4rem;
+    margin-left: 18rem;
 }
 
 /* .leftarrow{
@@ -146,7 +157,7 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     margin-top: 14rem;
     background-color:#FFFFFF;
     color:#217156;
-    /* border: 1px solid black; */
+    border-radius: 5px;
     width: 50px;
     height: 50px;
     outline: none;
@@ -165,7 +176,11 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     right: 11rem;
     z-index: 1050;
   }
+  .slide-arrow:hover{
+    color: #FFFFFF;
+    background-color: #77A359;
 
+}
 
 
 
@@ -261,7 +276,7 @@ display: none;
     width: 61rem;
     height: 20rem;
     margin-top: 14.2rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
     /* position: absolute; */
     z-index: 0;
 }
@@ -269,9 +284,9 @@ display: none;
 #id-3{
     margin-top: -31.7rem;
 }
-
-
-
+.icon-section{
+    display: flex;
+}
 
 
 
@@ -289,13 +304,14 @@ display: none;
 /***************************************************************SECTION 5*********************************************************/
 #section-5 {
     background: url("./Graphics/section-5\ bg.png");
-    height: 50rem;
+    height: 40rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 102%;
     margin-left:-8px;
     margin-right:-15px;
+    display: flex;
 }
 #section-5 img{
     height: 25rem;
@@ -305,12 +321,12 @@ display: none;
 }
 .bottom-section{
     padding-left: 7rem;
-    padding-top: 10rem;
+    padding-top: 9rem;
     /* padding-bottom: auto; */
 }
 .top-section{
     padding-left: 4rem;
-    padding-top: 10rem;
+    padding-top: 9rem;
     /* padding-bottom: auto; */
 }
 /***************************************************************SECTION 6*********************************************************/
@@ -333,9 +349,13 @@ display: none;
     margin: auto;
 }
 .adjust-width-card{
+    height: 23rem;
     width: 18rem;
     border-radius: 12px;
     margin: auto;
+}
+.price{
+    font-size: 1.2rem;
 }
 .btn-tag{
     background-color: #77A359;
@@ -364,7 +384,7 @@ display: none;
     font-size: 15px;
 }
 .card-title{
-    padding: 1rem;
+    padding: 0.7rem;
     font-weight: 600;
 }
 
@@ -441,6 +461,13 @@ margin-left: -2rem;
 
     body{
         width: 102%;
+        text-align: center;
+        top:0 ;
+        left:0 ;
+        right:0;
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
     }
     #section-1 {
         width: 101%;
@@ -456,19 +483,22 @@ margin-left: -2rem;
     #section-1 .display-6{
         font-weight: 600;
     }
-    .bottom-section{
+    #section-1 .bottom-section{
         padding-left: 3rem;
          padding-top: 4rem;
          padding-right: 3rem;
         /* padding-bottom: auto; */
     }
-    .top-section{
-        padding-left: 5rem;
+    #section-1 .top-section{
+        padding-left: 0rem;
         padding-top: 2rem;
     }
         /* padding-bottom: auto; */
-
     
+    .display-6{
+        font-size: 2rem;
+
+    }
 /***************************************************************SECTION 2*********************************************************/
 #section-2 {
     height: 37rem;
@@ -532,16 +562,15 @@ margin-right: -6rem;
     background-color:#FFFFFF;
     color:#217156;
     /* border: 1px solid black; */
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     outline: none;
     border: none;
-	padding: 0;
 	cursor: pointer;
 	outline: inherit;
-    padding: 1rem;
+    padding: 0;
   }
-  
+
   .prev-arrow{
     left: 1rem;
     z-index: 1050;
@@ -595,7 +624,7 @@ display: none;
 }
 .link-div{
     width: fit-content;
-    /* margin:; */
+    /* margin:1rem; */
     background: rgb(33,113,86);
     background: linear-gradient(90deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86%);;
     border-radius: 5px;
@@ -608,8 +637,8 @@ display: none;
 }
 
 .link-div-i{
+    text-align: left;
     color:white;
-    width: 11rem;
     padding: 1rem;
     color:black;
     text-decoration: none;
@@ -617,11 +646,12 @@ display: none;
     /* background-color:  #81A95A; */
     border-radius: 5px;
     font-size: 12px;
+    width: 12.4rem;
 }
 .selected{
     color:white;
     background-color: #217156;
-    width: 11rem;
+    
 }
 
 
@@ -640,7 +670,10 @@ display: none;
 
 .show-hide-content img{
     width: 17rem;
-    /* margin-top: 1.2rem; */
+    margin-top: 1.2rem;
+}
+#section-3 .title-1{
+    margin-top: 1rem;
 }
 
 
@@ -649,8 +682,8 @@ display: none;
     background-color: #fff;
     border-radius: 15px;
     width: 25rem;
-    height: 20rem;
-    margin-top: 15.2rem;
+    height: 32rem;
+    margin-top: 3.1rem;
     margin-left: 0rem;
     /* position: absolute; */
     z-index: 0;
@@ -688,12 +721,12 @@ display: none;
     font-weight: 600;
 }
 .bottom-section{
-    padding-left: 3rem;
+    padding-left: 1.7rem;
      padding-top: 4rem;
     /* padding-bottom: auto; */
 }
 .top-section{
-    padding-left: 5rem;
+    padding-left: 0.5rem;
     padding-top: 2rem;
 }
 /***************************************************************SECTION 6*********************************************************/
@@ -725,6 +758,7 @@ display: none;
     /* width: 8.5rem; */
     border-radius: 5px;
     font-size: 15px;
+    margin-bottom: 1rem;
 }
 
 .btn-tag-orange{
@@ -737,12 +771,13 @@ display: none;
     width: 7.5rem;
     border-radius: 5px;
     font-size: 15px;
+    margin-bottom: 1rem;
 }
 .card-text{
     font-size: 15px;
 }
 .card-title{
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: 600;
 }
 
@@ -775,4 +810,9 @@ margin-left: auto;
       padding-top: 3.5rem !important;
   }
 
+  .price{
+      font-size: 2rem;
   }
+
+  }
+
