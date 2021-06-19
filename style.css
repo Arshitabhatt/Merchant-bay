@@ -28,6 +28,7 @@ color: #BEFFC6;
 .btn-price{
     background-color: #217156;
 	border: none;
+    font-size: 500;
 	cursor: pointer;
 	outline: inherit;
     padding: 0.7rem 1.5rem;
@@ -57,6 +58,12 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
 }
 .display-6{
     font-size: 2.2rem;
+}
+.heading{
+    font-weight: 600;
+}
+.semi-bold{
+    font-weight: 500;
 }
 /***************************************************************SECTION 1*********************************************************/
 #section-1 {
@@ -91,6 +98,7 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
 /***************************************************************SECTION 2*********************************************************/
 #section-2 {
     background: url("./Graphics/section-2\ bg.png");
+    /* background: gray; */
     height: 69rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,15 +107,7 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     margin-left:-8px;
     margin-right:-15px;
 }
-#img-div img{
-    margin-top: 0.6rem;
-    height: 39.5rem;
 
-}
-#section-2 #img-div{
-    z-index: -5;
-    margin-bottom: -36.6rem;
-}
 #section-2 .top-section-2{
     margin-top: -2rem;
     padding-top: 4rem;
@@ -115,15 +115,20 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
 .sub-heading{
     font-size: 1.5rem;
 }
-.demo{
-    /* background-color: #fff; */
-    width: 52rem;
-    height: 32.8rem;
-    border: 1px solid black;
-    z-index: 1;
-    position: relative;
-    margin-left: 18rem;
+
+.slider-bg{
+    background-image: url("./Graphics/laptop2.png");
+    background-size: 66rem;
+    width: 66.3rem;
+    height: 40.4rem;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    
 }
+
 .prev{
     left: 3rem;
 }
@@ -131,23 +136,16 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     right: 3rem;
 }
 .slider-section img{
-    width: 52rem;
-    height: 32.8rem;
-    border: 1px solid black;
+    width: 52.1rem;
+    height: 33.3rem;
+    border-radius: 3px;
     z-index: 1;
-    position: relative;
-    margin-left: 18rem;
+    /* position: relative; */
+    margin-left: 7.3rem;
+    margin-top: 3.3rem;
 }
 
-/* .leftarrow{
-    width: 3rem;
-    height: 3rem;
-    background-color: red;
-    margin-top: 17rem;
-    position: absolute;
-    margin-left: 8rem;
 
-} */
 
 .slick-arrow.slick-prev {
     left: 0;
@@ -157,26 +155,26 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
   }
   .slide-arrow{
     position: absolute;
-    margin-top: 14rem;
+    margin-top: 20rem;
     background-color:#FFFFFF;
     color:#217156;
     border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     outline: none;
     border: none;
 	padding: 0;
 	cursor: pointer;
 	outline: inherit;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   
   .prev-arrow{
-    left: 11rem;
+    left: 8.7rem;
     z-index: 1050;
   }
   .next-arrow{
-    right: 11rem;
+    right: 8rem;
     z-index: 1050;
   }
   .slide-arrow:hover{
@@ -184,16 +182,6 @@ background: linear-gradient(180deg, rgba(33,113,86,1) 11%, rgba(129,169,90,1) 86
     background-color: #77A359;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /***************************************************************SECTION 3*********************************************************/
@@ -235,8 +223,8 @@ display: none;
 
 }
 .link-div img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .link-div-i{
@@ -270,6 +258,8 @@ display: none;
 
 .show-hide-content img{
     width: 20rem;
+    border: 8px solid white;
+    border-radius: 12px;
 }
 
 #out{
@@ -288,10 +278,11 @@ display: none;
     /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 15px;
-    width: 64rem;
+    width: 62rem;
     height: 20rem;
     margin-top: 12rem;
-    margin-left: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #id-3{
@@ -307,12 +298,16 @@ display: none;
 
 /***************************************************************SECTION 4*********************************************************/
 #section-4 {
-    margin: 3rem auto;
+    margin: 7rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+#section-4 .sub-heading-3{
+    font-size: 1.5rem;
+}
+
 
 /***************************************************************SECTION 5*********************************************************/
 #section-5 {
@@ -327,7 +322,7 @@ display: none;
     display: flex;
 }
 #section-5 img{
-    height: 25rem;
+    height: 24rem;
 }
 #section-5 .display-6{
     font-weight: 600;
@@ -366,6 +361,15 @@ display: none;
     width: 18rem;
     border-radius: 12px;
     margin: auto;
+}
+.adjust-width-card:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+    transition: box-shadow 0.3s ease-in-out;
 }
 .price{
     font-size: 2rem;
@@ -520,37 +524,29 @@ margin-left: -2rem;
     }
 /***************************************************************SECTION 2*********************************************************/
 #section-2 {
-    height: 37rem;
-    width: 100%;
+    height: 49rem;
+    width: 103%;
     margin-left: -8px;
     margin-right: -15px;
 }
 
-#img-div img{
-    margin-top: 0.6rem;
-    height: 12rem;
-
-}
-#section-2 #img-div{
-    z-index: -5;
-    margin-bottom: -36.6rem;
-}
 #section-2 .top-section-2{
-    margin-top: 0rem;
+    margin-top: -2rem;
     padding-top: 4rem;
 }
 .sub-heading{
     font-size: 1.5rem;
 }
-.demo{
-    /* background-color: #fff; */
-    width: 52rem;
-    height: 32.8rem;
-    border: 1px solid black;
-    z-index: 1;
-    position: relative;
-    margin-left: 18rem;
+
+.slider-bg{
+    background-size: 22rem;
+    width: 24rem;
+    height: 25.4rem;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .prev{
     left: 3rem;
 }
@@ -558,56 +554,37 @@ margin-left: -2rem;
     right: 3rem;
 }
 .slider-section img{
-    width: 15.7rem;
-    height: 9.9rem;
+    /* display: none; */
+    width: 17.5rem;
+    height: 10.8rem;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 3px;
     z-index: 1;
-    position: relative;
-    margin-left: 5.3rem;
+    /* position: relative; */
+    margin-left: 3.3rem;
+    margin-top: 7.3rem;
 }
 
-.slider-section{
-margin-top: 25.5rem;
-margin-right: -6rem;
-}
-.slick-arrow.slick-prev {
-    left: 0;
-  }
-  .slick-arrow.slick-next {
-    right: 0;
-  }
+
   .slide-arrow{
     position: absolute;
-    margin-top: 3.3rem;
-    background-color:#FFFFFF;
-    color:#217156;
-    /* border: 1px solid black; */
+    margin-top: 20rem;
+    border-radius: 5px;
     width: 30px;
     height: 30px;
     outline: none;
     border: none;
-	cursor: pointer;
-	outline: inherit;
-    padding: 0;
+	padding: 0;
   }
-
+  
   .prev-arrow{
-    left: 1rem;
+    left: 8.7rem;
     z-index: 1050;
   }
   .next-arrow{
-    right: 1rem;
+    right: 8rem;
     z-index: 1050;
   }
-
-
-
-
-
-
-
-
-
-
 
 
 
