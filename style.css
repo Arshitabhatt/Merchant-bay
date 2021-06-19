@@ -676,10 +676,12 @@ display: none;
     /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 15px;
-    width: 23rem;
+    width: 24rem;
     height: 37rem;
     margin-top: 1.1rem;
-    margin-left: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+
     /* position: absolute; */
     z-index: 0;
 }
